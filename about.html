@@ -1,0 +1,67 @@
+```html
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre mim</title>
+<link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="cabecalho">
+    <nav class="cabecalho__menu" aria-label="Navegação principal">
+      <a class="cabecalho__menu__link" href="./index.html">Home</a>
+      <a class="cabecalho__menu__link" href="./about.html" aria-current="page">Sobre mim</a>
+      <a class="cabecalho__menu__link" href="./curriculo.html">Currículo</a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="apresentacao">
+    <section class="apresentacao__conteudo">
+      <h1 class="apresentacao__conteudo__titulo__about">
+        Construo experiências <span class="titulo-destaque">claras e acessíveis</span> na web
+      </h1>
+
+      <p class="apresentacao__conteudo__texto">
+        Sou <strong>Luiz Moutinho</strong>, desenvolvedor front-end apaixonado por transformar ideias em
+        interfaces funcionais e bonitas. Acredito que um bom produto nasce da empatia com
+        quem usa — por isso, uno estética, performance e acessibilidade em cada projeto.
+      </p>
+
+      <p class="apresentacao__conteudo__texto">
+        Minha jornada começou na curiosidade sobre “como a web funciona”. Desde então, venho
+        estudando <em>HTML</em>, <em>CSS</em>, <em>JavaScript</em> e ferramentas modernas, buscando código
+        limpo e experiências fluidas. Trabalho com comunicação clara, prototipação rápida e
+        atenção aos detalhes.
+      </p>
+
+      <ul class="lista">
+        <li><strong>Como trabalho:</strong> comunicação direta, componentização e foco no usuário.</li>
+        <li><strong>No que acredito:</strong> acessibilidade e performance desde o início, não como extra.</li>
+        <li><strong>O que me inspira:</strong> design centrado em pessoas, natureza e música.</li>
+      </ul>
+
+      
+    </section>
+
+    <img
+      class="apresentacao__imagem__about"
+      src="./assets/mario.png"
+      alt="foto de perfil do Luiz Moutinho sorrindo"
+    />
+  </main>
+
+  <footer class="rodape">
+    © <span id="y"></span> Desenvolvido porLuiz Moutinho
+  </footer>
+
+  <script>
+    // ano automático no rodapé
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+```
