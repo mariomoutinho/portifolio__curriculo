@@ -42,14 +42,14 @@ body{
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 36px;
+    font-size: 2,25rem;
     font-family: var(--fonte-titulo);
     text-align: center;
     hyphens:calc(100% - 1ch);
 }
 
 .apresentacao__conteudo__texto{
-    font-size: 24px;
+    font-size: 1,5rem;
     font-family: var(--fonte-texto);
     text-align: justify;
     text-align-last: start;
@@ -68,7 +68,7 @@ body{
 .apresentacao__links__subtitulo{
     font-family: var(--fonte-titulo);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1,5rem;
 }
 
 .apresentacao__links__link{
@@ -80,7 +80,7 @@ body{
     max-width: 100%;
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1,5rem;
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
@@ -101,7 +101,7 @@ body{
     text-align: center;
     padding: 24px;
     font-family: var(--fonte-texto);
-    font-size: 24px;
+    font-size: 1,5rem;
     font-weight: 400;
     color: var(--preto);
     background-color: var(--ciano);
@@ -121,7 +121,7 @@ body{
 
 .cabecalho__menu__link{
     font-family: var(--fonte-texto);
-    font-size: 24px;
+    font-size: 1,5rem;
     font-weight: 600;
     color: var(--ciano);
     text-decoration: none;
@@ -174,7 +174,7 @@ body{
 
 .lista li{
     font-family: var(--fonte-texto);
-    font-size: 20px;
+    font-size: 1,25rem;
     line-height: 1.6;
     border-left: 3px solid var(--ciano);
     padding-left: 12px;
@@ -190,12 +190,12 @@ body{
 
 .cartao h3{
     font-family: var(--fonte-titulo);
-    font-size: 22px;
+    font-size: 1,375rem;
 }
 
 .cartao .meta{
     font-family: var(--fonte-texto);
-    font-size: 16px;
+    font-size: 1rem;
     opacity: .8;
 }
 
@@ -234,7 +234,7 @@ body{
     font-weight: 600;
 }
 .apresentacao__conteudo__titulo__about{
-    font-size: 32px;
+    font-size: 2rem;
     font-family: var(--fonte-titulo);
     text-align: center;
     hyphens:calc(100% - 1ch);
