@@ -13,7 +13,7 @@
     --cinza-escuro: #272727;
     --fonte-titulo: 'Krona One', sans-serif;
     --fonte-texto: 'Montserrat', sans-serif;
-    --largura-conteudo: 615px; /* mantém o seu padrão */
+    --largura-conteudo: 50%; /* mantém o seu padrão */
 }
 
 body{
@@ -47,11 +47,15 @@ body{
     text-align: center;
     hyphens:calc(100% - 1ch);
 }
-
+.apresentacao__conteudo__subtitulo{
+    font-size: 1,8rem;
+    font-family: var(--fonte-titulo);
+    text-align: center;
+}
 .apresentacao__conteudo__texto{
     font-size: 1,5rem;
     font-family: var(--fonte-texto);
-    text-align: justify;
+    text-align: left;
     text-align-last: start;
     hyphens: auto;
     line-height: 1.6;
@@ -62,21 +66,20 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
 }
 
 .apresentacao__links__subtitulo{
     font-family: var(--fonte-titulo);
-    font-weight: 400;
-    font-size: 1,5rem;
+        font-size: 1,5rem;
 }
 
-.apresentacao__links__link{
+.apresentacao__links__navegacao{
     display: flex;
     justify-content:center;
-    gap: 16px;
+    gap: 1rem;
     border: 2px solid var(--ciano);
-    width: 378px;
+    width: 50%;
     max-width: 100%;
     text-align: center;
     border-radius: 8px;
@@ -92,7 +95,7 @@ body{
     
 }
 
-.apresentacao__links__link:hover{
+.apresentacao__links__navegacao:hover{
     background-color: var(--cinza-escuro);
 }
 
@@ -157,11 +160,8 @@ body{
 
 /* imagem lateral – reaproveitável */
 .imagem__mario{
-    width: 600px;
-    max-width: auto;
-    height: auto;
-    
-    
+    width: 50%;
+    align-self: center;
 }
 
 /* componentes extras p/ “Sobre” e “Currículo” */
@@ -207,27 +207,48 @@ body{
 }
 
 @media (max-width: 860px){
-    .apresentacao{
+    .cabecalho{
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        gap: 16px;
+        padding: 8% 8% 0 8%;
+    }
+    .cabecalho__menu__link{
+        font-size: 1rem;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        align-items: center;
     }
     .cabecalho{
-        padding: 4% 8% 0 8%;
+        padding: 10% 8% 0 8%;
     }
     .cabecalho__menu{
         gap: 32px;
         flex-wrap: wrap;
     }
+    .apresentacao__conteudo{
+        width: 100%;
+        gap: 24px;
+        font-size: 50%;
+    }
+    .imagem__mario{
+        width: 85%;
+        }
+    .apresentacao__conteudo__texto{
+        font-size: 1rem;
+    }
+    .apresentacao__conteudo__titulo{
+        font-size: 1.5rem;    
 }
-/* foto sobre mim */
-.apresentacao__imagem__about{
-    width: 550px;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    border: 0px solid rgba(34,212,253,.25);
-    margin-top: 20px;
-    padding-right: 0px;
+    .apresentacao__links__subtitulo{
+        font-size: 1rem;
+    }
+    .apresentacao__links__navegacao{
+        font-size: 1rem;
+        width: 80%;
+        padding: 12px 0;
+    }
 }
 .paragrafo__destaque{
     color: var(--ciano);
